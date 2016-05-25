@@ -1,4 +1,4 @@
-# Generating docker.xauth (from http://stackoverflow.com/questions/16296753/can-you-run-gui-apps-in-a-docker-container)
+# Generating docker.xauth (see http://stackoverflow.com/a/25280523)
 xauth nlist :0 | sed -e 's/^..../ffff/' | xauth -f docker.xauth nmerge -
 
 sudo docker build -t caio.ros:rosx11 .
