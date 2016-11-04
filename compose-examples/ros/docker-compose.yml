@@ -7,7 +7,7 @@ services:
     command: roscore
 
   rqt:
-    image: caio.ros:rqt # the name of the compiled image
+    image: caio.ros:rqt
     container_name: rqt
     volumes:
       - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
