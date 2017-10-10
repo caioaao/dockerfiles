@@ -12,7 +12,7 @@ fi
 
 [[ -n "${CONTAINER_NAME:-}" ]] && NAME_PARAM="--name=${CONTAINER_NAME}"
 
-$DOCKER run -it --rm ${NAME_PARAM:-}                    \
+$DOCKER run -it --rm ${NAME_PARAM:-}  ${EXTRA_ARGS:-}   \
         -v "$(pwd):/project"                            \
         -v "${DATASETS_DIR:-$(pwd)/datasets}:/datasets" \
         $DOCKERIMAGE "${@:1}"
