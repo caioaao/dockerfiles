@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y gcc libc-dev libffi-dev g++
 
 RUN pip install Cython
 
-RUN pip install joblib xgboost sklearn pandas bhtsne keras
+RUN pip install joblib xgboost sklearn pandas bhtsne keras seaborn requests tqdm
 
 WORKDIR /project
 
