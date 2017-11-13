@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.3.0
+FROM tensorflow/tensorflow:1.4.0
 
 ENV HOME /root
 
