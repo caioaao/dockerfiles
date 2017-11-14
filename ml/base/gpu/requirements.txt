@@ -1,0 +1,11 @@
+Cython==0.27.3
+joblib==0.11
+tqdm==4.19.4
+xgboost==0.6a2
+scikit-learn==0.19.1
+pandas==0.21.0
+bhtsne==0.1.9
+Keras==2.1.0
+seaborn==0.8.1
+requests==2.18.4
+

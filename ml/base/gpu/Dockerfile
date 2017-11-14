@@ -4,9 +4,11 @@ ENV HOME /root
 
 RUN apt-get update && apt-get install -y gcc libc-dev libffi-dev g++ python-dev
 
-RUN pip install Cython
+COPY requirements.txt /tmp/requirements.txt
 
-RUN pip install joblib xgboost sklearn pandas bhtsne keras seaborn requests tqdm
+# To force ordering, otherwise I can't make Cython come before bhtsne
+
+RUN cat /tmp/requirements.txt | xargs -n 1 -L 1 pip install
 
 RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
 
