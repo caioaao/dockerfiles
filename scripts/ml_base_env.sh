@@ -4,7 +4,7 @@ set -euo pipefail
 
 if [[ -n "${WITH_GPU:-}" ]]; then
     DOCKER=nvidia-docker
-    DOCKERIMAGE="${DOCKERIMAGE:-caioaao/ml-base-gpu:2.0.1}"
+    DOCKERIMAGE="${DOCKERIMAGE:-caioaao/ml-base-gpu:2.1.0}"
 else
     DOCKER=docker
     DOCKERIMAGE="${DOCKERIMAGE:-caioaao/ml-base:1.2.0}"
