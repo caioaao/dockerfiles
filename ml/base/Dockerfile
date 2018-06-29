@@ -1,4 +1,5 @@
-FROM tensorflow/tensorflow:1.4.0-gpu-py3
+ARG BASE_IMAGE
+FROM $BASE_IMAGE
 
 ENV HOME /root
 

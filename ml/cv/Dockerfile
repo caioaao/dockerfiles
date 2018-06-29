@@ -1,4 +1,4 @@
-FROM caioaao/ml-base-gpu:2.1.0
+FROM caioaao/ml-base-gpu:3.0.0
 
 RUN apt-get install -y \
         wget \
