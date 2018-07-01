@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=3.1.0
+VERSION=3.1.1
 
 if [[ "$*" = "gpu" ]]; then
     BASE_IMAGE=tensorflow/tensorflow:1.7.1-gpu-py3

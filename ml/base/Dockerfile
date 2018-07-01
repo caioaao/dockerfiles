@@ -19,6 +19,7 @@ RUN npm install --save-dev webpack
 
 RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
 RUN jupyter labextension install jupyterlab-toc
+RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 WORKDIR /project
 
