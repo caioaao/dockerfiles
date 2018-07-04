@@ -1,8 +1,6 @@
-FROM caioaao/ml-base-gpu:3.0.0
+FROM caioaao/ml-base-gpu:4.0.0
 
 RUN apt-get install -y \
-        wget \
-        cmake \
         libswscale-dev \
         libtbb2 \
         libtbb-dev \
