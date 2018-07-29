@@ -27,11 +27,14 @@ RUN cat /tmp/requirements.txt | xargs -n 1 -L 1 pip install
 COPY xgb.sh /tmp/xgb.sh
 RUN /tmp/xgb.sh
 
+COPY lightgbm.sh /tmp/lightgbm.sh
+RUN /tmp/lightgbm.sh
+
 RUN npm install --save-dev webpack
 
 RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
 RUN jupyter labextension install jupyterlab-toc
-RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
+RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager@0.35
 
 WORKDIR /project
 
