@@ -1,7 +1,7 @@
 Cython==0.27.3
 joblib==0.11
 tqdm==4.19.4
-scikit-learn==0.19.1
+scikit-learn==0.19.2
 pandas==0.22.0
 bhtsne==0.1.9
 Keras==2.1.0
@@ -11,6 +11,7 @@ networkx==1.11
 hyperopt==0.1
 jupyterlab==0.32.1
 setuptools==39.2.0
-shap==0.19.2
-wolpert==0.1b1
+shap==0.21.0
+wolpert==0.1b2
 catboost==0.9.1.1
+dask[complete]==0.18.2
