@@ -4,10 +4,10 @@ set -euo pipefail
 
 if [[ -n "${WITH_GPU:-}" ]]; then
     DOCKER=nvidia-docker
-    DOCKERIMAGE="${DOCKERIMAGE:-caioaao/ml-base-gpu:4.0.2}"
+    DOCKERIMAGE="${DOCKERIMAGE:-caioaao/ml-base-gpu:5.2.0}"
 else
     DOCKER=docker
-    DOCKERIMAGE="${DOCKERIMAGE:-caioaao/ml-base:4.0.2}"
+    DOCKERIMAGE="${DOCKERIMAGE:-caioaao/ml-base:5.2.0}"
 fi
 
 [[ -n "${CONTAINER_NAME:-}" ]] && NAME_PARAM="--name=${CONTAINER_NAME}"
