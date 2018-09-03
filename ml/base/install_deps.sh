@@ -13,7 +13,7 @@ if [ "$USE_GPU" = true ]; then
     PACKAGES="${PACKAGES} cuda-libraries-$CUDA_PKG_VERSION libnccl2=$NCCL_VERSION-1+cuda9.0 cuda-libraries-dev-$CUDA_PKG_VERSION cuda-nvml-dev-$CUDA_PKG_VERSION cuda-minimal-build-$CUDA_PKG_VERSION cuda-core-9-0=9.0.176.3-1 cuda-cublas-dev-9-0=9.0.176.3-1 libnccl-dev=$NCCL_VERSION-1+cuda9.0"
 fi
 
-apt-get add-apt-repository ppa:jonathonf/python-3.5 # python 3.5.3 so I can use altair...
+add-apt-repository -y ppa:jonathonf/python-3.5 # python 3.5.3 so I can use altair...
 apt-get update
 apt-get install -y --no-install-recommends --only-upgrade python3.5=3.5.3*
 apt-get install -y --no-install-recommends ${PACKAGES}
