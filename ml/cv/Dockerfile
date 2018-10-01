@@ -1,4 +1,4 @@
-FROM caioaao/ml-base-gpu:4.0.2
+FROM caioaao/ml-base-gpu:5.2.2
 
 RUN apt-get install -y \
         libswscale-dev \
