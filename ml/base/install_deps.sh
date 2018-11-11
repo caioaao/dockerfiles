@@ -6,7 +6,7 @@ set -euo pipefail
 PACKAGES="gcc libc-dev libffi-dev g++ python-dev npm wget cmake git python3-setuptools"
 
 # necessary for lightgbm
-PACKAGES="${PACKAGES} libboost-dev libboost-system-dev libboost-filesystem-dev openmpi-bin libopenmpi-dev"
+PACKAGES="${PACKAGES} libboost-dev libboost-system-dev libboost-filesystem-dev openmpi-bin libopenmpi-dev swig libpulse-dev"
 
 if [ "$USE_GPU" = true ]; then
     # XGB with GPU
