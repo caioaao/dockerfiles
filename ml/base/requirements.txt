@@ -10,7 +10,7 @@ requests>=2.20.0
 networkx==1.11
 hyperopt==0.1
 jupyterlab==0.32.1
-setuptools==39.2.0
+setuptools==65.5.1
 shap==0.21.0
 wolpert==0.1b2
 catboost==0.9.1.1
